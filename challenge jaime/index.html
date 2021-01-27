@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Challenge
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+      <table>
+        <tr>
+            <td>
+            <div>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <label>Username</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div  class="form-action-buttons btn">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            </td>
+            <div>
+                 <td>
+                    <table class="list" id="usernames">
+                            <thead>
+                                <tr>
+                                 <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>password</th>
+                                    <th>username</th>
+                                 <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                    </table>
+                 </td>
+             </tr>
+         </div>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

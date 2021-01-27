@@ -1,0 +1,37 @@
+.main__container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 130px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-device-width: 480px) {
+  .main__container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container__img{
+  background-color: $background-color-image;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 50%;
+}
+.img{
+  width:70%;
+}
+@media (max-width: 600px),  handheld and (orientation: portrait) {
+  .main__container{
+    display: flex;
+    flex-direction: row;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .container__img{
+    display: none;
+  }
+}
